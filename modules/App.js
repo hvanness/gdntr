@@ -21,7 +21,7 @@ const App = () => (
                 }
             }}
         />*/}
-        <video className='video' autoPlay loop><source src="nicolo+flying+chairs.mp4" type="video/mp4" /></video>
+        <video className='video' autoPlay loop><source src="https://static1.squarespace.com/static/570bc29fc6fc08215d11dd1d/t/572836171bbee0a94c5b0774/1462253244014/nicolo+flying+chairs.mp4" type="video/mp4" /></video>
         {/*
         <div className='logo logoTxt red'>
             <div>gdn</div>
