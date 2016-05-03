@@ -12,8 +12,6 @@ html,body {
     min-width: 100%;
     position: absolute;
     top: 0;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: 20% 40%;
 }
 
 .logo {
@@ -45,11 +43,13 @@ html,body {
 .logo.red {
     color: rgb(255,0,0);
     transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
 }
 
 .logo.green {
     color: rgb(0,255,0);
     transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
 }
 
 .logo.blue {
@@ -114,28 +114,37 @@ html,body {
 
 .menu_opener:checked ~ .link_one {
   transform: translateX(-67.5px);
+  -webkit-transform: translateX(-67.5px);
 }
 .menu_opener:checked ~ .link_two {
-  -webkit-transition-delay: 100ms;
   transform: translateX(-67.5px);
+  transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  -webkit-transform: translateX(-67.5px);
 }
 .menu_opener:checked ~ .link_three {
-  -webkit-transition-delay: 250ms;
+  transition-delay: 250ms;
   transform: translateX(-67.5px);
+  -webkit-transition-delay: 250ms;
+  -webkit-transform: translateX(-67.5px);
 }
 .menu_opener:checked ~ .link_four {
-  -webkit-transition-delay: 400ms;
   transform: translateX(-67.5px);
+  transition-delay: 400ms;
+  -webkit-transition-delay: 400ms;
+  -webkit-transform: translateX(-67.5px);
 }
 .menu_opener:checked ~ .barre_hamburger {
   opacity: 0;
 }
 .menu_opener:checked ~ .menu_opener_label:after {
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   top: 21px;
 }
 .menu_opener:checked ~ .menu_opener_label:before {
   transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   top: 21px;
 }
 
